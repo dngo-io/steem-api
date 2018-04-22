@@ -2,8 +2,8 @@
 
 namespace SteemAPI;
 
-use SteemAPI\Account as Account;
-use SteemAPI\Post as Post;
+use SteemAPI\API\Account as Account;
+use SteemAPI\API\Post as Post;
 
 class SteemAPI
 {
@@ -17,21 +17,19 @@ class SteemAPI
     }
 
     /**
-     * @return \SteemAPI\Account
+     * @return \SteemAPI\API\Account
      */
     public function getAccount()
     {
-        require_once 'API/Account.php';
         return new Account();
     }
 
 
     /**
-     * @return \SteemAPI\Post
+     * @return \SteemAPI\API\Post
      */
     public function getPost()
     {
-        require_once 'API/Post.php';
         return new Post();
     }
 

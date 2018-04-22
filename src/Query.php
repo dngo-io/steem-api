@@ -91,7 +91,7 @@ class Query
             return json_decode($response, true);
 
         } catch (RequestException $e) {
-            $response = $e->getResponse()->getBody()->getContents();
+            $response = $e->getResponse();
             $response = json_decode($response, true);
             return $response;
         } catch (\Exception $e) {

@@ -1,5 +1,7 @@
 <?php
-namespace SteemAPI;
+namespace SteemAPI\API;
+
+use SteemAPI\Query;
 
 class Account extends Query
 {

@@ -1,6 +1,7 @@
 <?php
-namespace SteemAPI;
+namespace SteemAPI\API;
 
+use SteemAPI\Query;
 
 class Post extends Query
 {
@@ -86,7 +87,6 @@ class Post extends Query
                     $request[$key]['replies'] = [];
             }
         }
-
 
         return $request;
     }
