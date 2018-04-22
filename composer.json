@@ -1,5 +1,5 @@
 {
-    "name": "frnxstd/steem-api",
+    "name": "dngo-io/steem-api",
     "description": "Steem API PHP Wrapper",
     "version": "1.0.0",
     "require": {
